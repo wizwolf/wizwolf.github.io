@@ -75,3 +75,9 @@ exclude:
 collections:
   videos:
     output: true
+  languages:
+      output: true
+  platforms:
+      output: true
+  tools:
+      output: true

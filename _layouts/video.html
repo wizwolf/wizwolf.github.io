@@ -1,0 +1,83 @@
+---
+layout: default
+---
+
+<!-- Example row of columns -->
+<div class="row">
+
+    <!-- CONTENT SIDE-->
+    <div class="col-sm-12 col-lg-7">
+        <!-- article-->
+        <!-- VIDEO-->
+        <div class="vendor">
+            <div class="container-video">
+                <div class="fluid-width-video-wrapper" style="padding-top: 50%;">
+                    <iframe src="{{ page.series[0].url }}" id="fitvid"></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- /VIDEO-->
+        <div class="well video-well">
+            <ul class="clearfix" data-albumlist-elem="cont">
+                {% for video in page.series %}
+                <li class="album_item">
+                    <a title="{{video.title}}" href="#"  onclick="play('{{video.url}}')" >{{ forloop.index }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!--/ VIDEO -->
+
+
+        <div class="panel panel-default hidden-xs" style="margin-top:30px;">
+            <div class="panel-body">
+                <!-- TABS CONTROLS -->
+                <ul id="myTab" class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#home" data-toggle="tab"><i class="icon-info-sign"></i>推荐</a></li>
+                    <li><a href="#profile" data-toggle="tab"><i class="icon-info-sign"></i>评论</a>
+                    </li>
+                </ul>
+                <!-- /TABS CONTROLS -->
+                <!-- PANES -->
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade in active" id="home">
+                        <p>优秀资源。</p>
+                    </div>
+                    <div class="tab-pane fade widget-tags " id="profile">
+                        <p>评论未开启。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+        <!-- INNER ROW-FLUID-->
+
+    </div>
+    <!-- /CONTENT SIDE-->
+
+    <!-- RIGHT SIDE-->
+    <div class="col-sm-12 col-lg-5">
+        <h2>{{ page.title }}</h2>
+        <hr>
+
+        <p class="lead">{{ page.lead }}</p>
+
+        <p class="">{{ content }}</p>
+        <hr>
+        <p class=""><a class="btn btn-block btn-lg btn-warning"> CALL TO ACTION BUTTON! </a></p>
+
+
+    </div>
+    <!-- /RIGHT SIDE-->
+    <!-- .pager -->
+    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 pull-left">
+        <ul class="pager">
+            <li class="previous"><a href="#">&larr; Older</a></li>
+            <li class="next"><a href="#">Newer &rarr;</a></li>
+        </ul>
+    </div>
+    <!-- /.pager -->
+
+</div>
