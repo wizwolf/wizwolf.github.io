@@ -2,17 +2,9 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">    
-      
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<h2>代码----启迪智慧，编织未来！</h2>
+<br>
+<p class="lead">
+    我爱编程，走在编程的路上，需要不断地学习，学习就需要好的资源，这里是我收集的一些散落在网上的好资源，与同道分享，共勉！
+</p>
 
-      <div class="entry">
-        {{ post.content | truncatewords:40}}
-      </div>
-      
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>

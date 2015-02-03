@@ -1,15 +1,15 @@
 ---
 layout: page
-title: About
+title: 关于
 permalink: /about/
 ---
 
-Some information about you!
+我是一个喜爱编程的人！
 
-### More Information
+### 个人简介
 
-A place to include any other types of information that you'd like to include about yourself. 
+每一个编程的人，都走过一段艰辛的路，我也一样。
 
-### Contact me
+### 保持联络
 
-[email@domain.com](mailto:email@domain.com)
+[wizwolf@126.com](mailto:wizwolf@126.com)
